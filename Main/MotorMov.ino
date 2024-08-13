@@ -4,7 +4,7 @@ void motor(int16_t vel_izquierdo, int16_t vel_derecho){
 }
 
 void motor_A(int16_t velocidad) {
-  if (velocidad > 0) {
+  if (velocidad >= 0) {
     // Da la dirección del Giro
     digitalWrite(AIN1, HIGH);
     digitalWrite(AIN2, LOW);
@@ -24,7 +24,7 @@ void motor_A(int16_t velocidad) {
 }
 
 void motor_B(int16_t velocidad) {
-  if (velocidad > 0) {
+  if (velocidad >= 0) {
     // Da la dirección del Giro
     digitalWrite(BIN1, LOW);
     digitalWrite(BIN2, HIGH);
